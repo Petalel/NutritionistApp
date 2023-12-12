@@ -15,31 +15,21 @@ public class Meal {
         this.foodItems = new ArrayList<>();
     }
 
-
     public void addFoodItem(FoodItem foodItem) {
         foodItems.add(foodItem);
-        totalCalories += foodItem.getNutrients().getCalories();
+        updateTotalCalories(foodItem);
     }
 
     public void removeFoodItem(FoodItem foodItem) {
-        foodItems.remove(foodItem);	
+        foodItems.remove(foodItem);
+        updateTotalCalories(foodItem);
+    }
+
+    private void updateTotalCalories(FoodItem foodItem) {
         totalCalories += foodItem.getNutrients().getCalories();
     }
-    
-	public double getTotalCalories() {
+
+    public double getTotalCalories() {
 		return totalCalories;
 	}
-	
-	 public void printMealDetails() {
-	        System.out.println("Meal ID: " + mealID);
-	        System.out.println("Meal Name: " + mealName);
-	        System.out.println("Timestamp: " + timestamp);
-	        System.out.println("Food Items:");
-	        for (FoodItem foodItem : foodItems) {
-	            System.out.println("- " + foodItem.getName());
-	        }
-	        System.out.println("Total Calories: " + totalCalories);
-	    }
-	
-	
 }
