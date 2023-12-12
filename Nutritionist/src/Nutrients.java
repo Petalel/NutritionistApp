@@ -27,7 +27,5 @@ public class Nutrients {
 		return calories;
 	}
 
-	public double calculateTotal() {
-        return calories + protein + carbs + fat;
-    }
+	
 }
