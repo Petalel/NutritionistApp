@@ -24,4 +24,9 @@ public class FoodItem {
 	public Nutrients getNutrients() {
 		return nutrients;
 	}
+
+
+	public String getName() {
+		return name;
+	}
 }

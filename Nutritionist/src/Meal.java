@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Meal Class
 public class Meal {
     private String mealID;
     private String mealName;
@@ -31,7 +30,7 @@ public class Meal {
 		return totalCalories;
 	}
 	
-	 /* public void printMealDetails() {
+	 public void printMealDetails() {
 	        System.out.println("Meal ID: " + mealID);
 	        System.out.println("Meal Name: " + mealName);
 	        System.out.println("Timestamp: " + timestamp);
@@ -40,18 +39,7 @@ public class Meal {
 	            System.out.println("- " + foodItem.getName());
 	        }
 	        System.out.println("Total Calories: " + totalCalories);
-	    }*/
+	    }
 	
-	/* public double calculateAverageServingSize() {
-        if (foodItems.isEmpty()) {
-            return 0.0;
-        }
-
-        double totalServingSize = 0;
-        for (FoodItem foodItem : foodItems) {
-            totalServingSize += foodItem.getServingSize();
-        }
-
-        return totalServingSize / foodItems.size();
-    }*/
+	
 }

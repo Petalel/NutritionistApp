@@ -33,7 +33,7 @@ public class Recipe {
 
         return new Nutrients(totalCalories, totalProtein, totalCarbs, totalFat);
     }
-    /*
+    
     public void printRecipeDetails() {
         System.out.println("Recipe ID: " + recipeID);
         System.out.println("Recipe Name: " + name);
@@ -50,5 +50,5 @@ public class Recipe {
         System.out.println("- Protein: " + nutritionalInfo.getProtein());
         System.out.println("- Carbs: " + nutritionalInfo.getCarbs());
         System.out.println("- Fat: " + nutritionalInfo.getFat());
-    }*/
+    }
 }

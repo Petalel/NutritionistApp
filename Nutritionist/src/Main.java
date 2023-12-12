@@ -5,7 +5,6 @@ import java.util.List;
 public class Main {
 	
 		public static void main(String[] args) {
-			// TODO Auto-generated method stub
 			  User user = new User("123", "john_doe", "password", 25, "Male", 70.0, 175.0);
 		        user.addDietaryPreference("Vegetarian");
 		        user.addAllergy("Nuts");
