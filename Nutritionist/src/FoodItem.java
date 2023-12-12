@@ -17,7 +17,7 @@ public class FoodItem {
     }
 
 
-    public boolean checkAllergens(User user) {
+    public boolean containsUserAllergens(User user) {
         return user.getAllergies().containsAll(allergens);
     }
 
